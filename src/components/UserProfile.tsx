@@ -1,8 +1,11 @@
 import React from "react";
-import "./UserProfile.css";
+import Summary from "./summary/Summary";
+import "./UserProfile.scss";
 
-const UserProfile: React.FC = () => {
-  return <div></div>;
-};
+const UserProfile: React.FC = () => (
+  <div className="user-profile">
+    <Summary />
+  </div>
+);
 
 export default UserProfile;

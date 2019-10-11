@@ -1,0 +1,48 @@
+.user-profile {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
+.summary {
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+
+    &__info {
+      display: flex;
+      align-items: center;
+
+      &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__name {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+
+        &__title {
+          font-size: 1.25rem;
+        }
+      }
+
+      &__image__container {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &__stats {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
