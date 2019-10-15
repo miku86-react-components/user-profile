@@ -7,9 +7,11 @@
     "@types/node": "12.7.12",
     "@types/react": "16.9.5",
     "@types/react-dom": "16.9.1",
+    "node-sass": "^4.12.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
+    "typeface-roboto": "0.0.75",
     "typescript": "3.6.4"
   },
   "scripts": {
@@ -17,9 +19,14 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "test": "react-scripts test",
-    "test:cov": "react-scripts test --coverage",
+    "test:cov": "react-scripts test --coverage --watchAll=false",
     "test:ci": "CI=true npm test",
     "netlify:deploy": "netlify deploy --dir=./build -p -m \"$(git log -1 --pretty=%B)\""
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx,ts,tsx}"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
