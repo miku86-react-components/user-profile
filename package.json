@@ -23,6 +23,11 @@
     "test:ci": "CI=true npm test",
     "netlify:deploy": "netlify deploy --dir=./build -p -m \"$(git log -1 --pretty=%B)\""
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx,ts,tsx}"
+    ]
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
