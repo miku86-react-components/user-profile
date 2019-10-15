@@ -1,6 +1,6 @@
 import React from "react";
 
-const Summary = () => {
+const Summary: React.FC = () => {
   return (
     <div className="summary" data-testid="summary">
       <div className="summary__user">
