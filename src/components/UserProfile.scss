@@ -12,7 +12,7 @@
 .summary {
   background-color: #fff;
   max-width: 600px;
-  padding: 15px 20px;
+  padding: 25px 30px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 1px 1px 4px rgba(0, 0, 0, 0.1);
 
   &__user {
@@ -22,11 +22,12 @@
     &__info {
       display: flex;
       align-items: center;
+      margin-bottom: 30px;
 
       &__details {
         display: flex;
         flex-direction: column;
-        margin-bottom: 30px;
+        margin-left: 20px;
 
         > p {
           margin: 0;
@@ -38,7 +39,7 @@
         }
 
         &__title {
-          font-size: 1.25rem;
+          font-size: 1rem;
         }
       }
 
