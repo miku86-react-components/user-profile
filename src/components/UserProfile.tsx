@@ -1,4 +1,5 @@
 import React from "react";
+import "typeface-roboto";
 import Summary from "./summary/Summary";
 import "./UserProfile.scss";
 
