@@ -9,20 +9,8 @@ describe("UserProfile", () => {
     expect(container).toBeTruthy();
   });
 
-  describe("summary", () => {
-    it("should show the summary container", () => {
-      const { getByTestId } = render(<UserProfile />);
-      expect(getByTestId("summary")).toBeInTheDocument();
-    });
-
-    it("should show image, name, title, streak, location and join date", () => {
-      const { getByTestId } = render(<UserProfile />);
-      expect(getByTestId("user-image")).toBeInTheDocument();
-      expect(getByTestId("user-name")).toBeInTheDocument();
-      expect(getByTestId("user-title")).toBeInTheDocument();
-      expect(getByTestId("user-streak")).toBeInTheDocument();
-      expect(getByTestId("user-location")).toBeInTheDocument();
-      expect(getByTestId("user-joindate")).toBeInTheDocument();
-    });
+  it("should show the summary component", () => {
+    const { getByTestId } = render(<UserProfile />);
+    expect(getByTestId("summary")).toBeInTheDocument();
   });
 });
