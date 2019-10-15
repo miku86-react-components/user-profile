@@ -1,6 +1,10 @@
 import React from "react";
+import { user } from "../../data/user";
+import { daysSinceJoining } from "../../helpers/helpers";
 
 const Summary: React.FC = () => {
+  const { name, title, location, joinDate } = user;
+
   return (
     <div className="summary" data-testid="summary">
       <div className="summary__user">
@@ -13,20 +17,21 @@ const Summary: React.FC = () => {
               className="summary__user__info__details__name"
               data-testid="user-name"
             >
-              miku86
+              {name}
             </p>
             <p
               className="summary__user__info__details__title"
               data-testid="user-title"
             >
-              Fullstack Developer
+              {title}
             </p>
           </div>
         </div>
         <div className="summary__user__stats">
-          <div data-testid="user-streak">1.000 days streak</div>
-          <div data-testid="user-location">Stuttgart, Germany</div>
-          <div data-testid="user-joindate">Joined October 2019</div>
+          <div data-testid="user-days-since-joining">
+            {daysSinceJoining(joinDate)} days here
+          </div>
+          <div data-testid="user-location">{location}</div>
         </div>
       </div>
     </div>
