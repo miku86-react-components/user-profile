@@ -1,8 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.user-profile {
+  background-color: #eee;
+  color: #222;
+  padding: 20px;
+}
+
 .summary {
   background-color: #fff;
-  width: 100%;
   max-width: 600px;
-  padding: 20px;
+  padding: 15px 20px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 1px 1px 4px rgba(0, 0, 0, 0.1);
 
   &__user {
