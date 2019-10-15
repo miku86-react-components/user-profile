@@ -1,4 +1,5 @@
 import React from "react";
+import photo from "../../assets/photo.jpg";
 import { user } from "../../data/user";
 import { daysSinceJoining } from "../../helpers/helpers";
 
@@ -10,7 +11,12 @@ const Summary: React.FC = () => {
       <div className="summary__user">
         <div className="summary__user__info">
           <div className="summary__user__info__image__container">
-            <img src="" alt="user" data-testid="user-image" />
+            <img
+              src={photo}
+              alt="user"
+              className="summary__user__info__image"
+              data-testid="user-image"
+            />
           </div>
           <div className="summary__user__info__details">
             <p

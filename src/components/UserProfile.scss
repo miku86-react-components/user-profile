@@ -42,9 +42,14 @@
         }
       }
 
-      &__image__container {
-        width: 60px;
-        height: 60px;
+      &__image {
+        width: 100%;
+        border-radius: 50%;
+
+        &__container {
+          width: 60px;
+          height: 60px;
+        }
       }
     }
 
