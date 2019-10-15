@@ -35,9 +35,17 @@ const Summary: React.FC = () => {
         </div>
         <div className="summary__user__stats">
           <div data-testid="user-days-since-joining">
+            <span role="img" aria-label="calendar">
+              📅
+            </span>{" "}
             {daysSinceJoining(joinDate)} days here
           </div>
-          <div data-testid="user-location">{location}</div>
+          <div data-testid="user-location">
+            <span role="img" aria-label="globe">
+              🌍
+            </span>{" "}
+            {location}
+          </div>
         </div>
       </div>
     </div>
