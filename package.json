@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.0.2",
-    "@testing-library/react": "9.4.0",
+    "@testing-library/react": "9.4.1",
     "netlify-cli": "2.30.0"
   }
 }
