@@ -10,7 +10,7 @@
     "node-sass": "4.13.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-scripts": "3.3.0",
+    "react-scripts": "3.4.3",
     "typeface-roboto": "0.0.75",
     "typescript": "3.9.7"
   },
